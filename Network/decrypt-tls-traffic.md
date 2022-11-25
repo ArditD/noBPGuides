@@ -6,6 +6,7 @@ Works also with TLSv1.2
 - Linux ws 6.0.9-arch1-1 #1 SMP PREEMPT_DYNAMIC Wed, 16 Nov 2022 17:01:17 +0000 x86_64 GNU/Linux
 - Wireshark : Version         : 4.0.1-1
 - A server that supports    TLSv1.3 
+- tcpdump 4.99.1
 
 ### Step 1 : Prepare the capture
 ```
@@ -18,6 +19,8 @@ $   sudo tcpdump -s0 -nnvvi eth4 port 443 -w capture.cap
 ### Step 2 : Fire the client that will be generating TLSv1.3 / HTTPs traffic and set the env var
 ```
 $   SSLKEYLOGFILE=/home/qacicd/tlskeylogfile.log firefox 
+# Another example :
+$   SSLKEYLOGFILE=/home/qacicd/tlskeylogfile.log openssl s_client -showcerts -connect duckduckgo.com:443 -state
 ```
 > You will be generating traffic with your TLS client (it can be curl, openssl, firefox, chrome, a robot framework selenium session, whatever client that supports TLS)
 > The file will collect Client/Server handshake secrets via env variable used to decrypt that same traffic.
