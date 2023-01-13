@@ -21,7 +21,7 @@ It will contain 4 categories / folders that may grow overtime.
 
 # Linux
 
-Loading...
+*   [Dissecting chatty application traffic using strace ](Linux/Dissecting-chatty-application-traffic-using-strace.md)
 
 # Automation
 
