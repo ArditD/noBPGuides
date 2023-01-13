@@ -61,9 +61,9 @@ r3.o.lencr.org
 
 ## Hmmm, explain!
 First of all, with strace I traced for connect and openat.
-Connect will take care of the IPv4 / IPv6 traffic, while openat is not specifically related to DNS, but on systemd systems it will make that kind of request to /run/systemd/machines/domain-name.com  , I know it's quite interesting, but it's a sure fire method, I verified it also with a dnsproxy in the middle and everything which was caught by strace was also logged in the proxy.
+Connect will take care of the IPv4 / IPv6 traffic, while openat is not specifically related to DNS, but on systemd systems it will make that kind of request to /run/systemd/machines/domain-name.com  , I know it's quite interesting, but it's a sure fire method, I verified it also with a dnsproxy in the middle and everything which was logged by strace was also logged in the proxy.
 
-cat / cut / grep , basically filters and cleans out all the interesting data which is the domains, IPv4 addresses, and IPv6
+cat / cut / grep , basically filters and clean ups all the interesting data which is the domains, IPv4 addresses, and IPv6
 
 ## What to do with the data?
 It's up to you if you : 
