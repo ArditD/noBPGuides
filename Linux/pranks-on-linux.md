@@ -1,6 +1,6 @@
 ### Prerequisites 
 Make sure the following are installed on the remote Linux Machine that you want to play a prank on : 
-- openssh / sshd is up and running so you can login to
+- openssh / sshd is up and running on the remote machine so you can login
 - mpv
 - xdotool
 - xrandr / xterm
@@ -8,7 +8,7 @@ Make sure the following are installed on the remote Linux Machine that you want 
 
 ### Getting ready :
 ```bash
-ssh machine
+ssh user@remote-machine
 export DISPLAY=:0  # it's usually always 0 unless it has multiple displays
 ```
 
