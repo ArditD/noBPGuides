@@ -22,6 +22,7 @@ It will contain 4 categories / folders that may grow overtime.
 # Linux
 
 *   [Dissecting chatty application traffic using strace ](Linux/Dissecting-chatty-application-traffic-using-strace.md)
+*   [Play pranks on remote Linux systems](Linux/pranks-on-linux.md)
 
 # Automation
 
