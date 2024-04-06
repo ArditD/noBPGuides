@@ -3,7 +3,7 @@ These is an extract of a test-automation project (geared towards the test enviro
 authentication servers (radius,. openldap, samba [ad - dc] , keycloak) on a Linux based environment for test automation purposes. \
 The script are tested and robust using mainstream containers (openldap, radius) and methods (docker buildx instead of the deprecated docker build).
 
-## How do I use it if I want to build the script?
+## How do I use it if I want to build the container?
 - RTM, system pre-requisites and the documentation related to che container you want to build
 - Run the script on a VM or on a host.
 
