@@ -10,6 +10,7 @@
 - Keycloak for Oauth2 which comes in 2 flavors 
     - Host installation (for better performance and integration) on Arch Linux
     - Docker container - in case you want it on a docker container edit arch-authentication.pkr.hcl accordingly (check provisioning section).
+
 TODO: 
 - Samba providing Active Directory and Domain controller services (plus the rest of file-sharing , etc) automated on a docker container
 
