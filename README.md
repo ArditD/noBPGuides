@@ -25,7 +25,7 @@ It will contain 4 categories / folders that may grow overtime.
 *   [Play pranks on remote Linux systems](Linux/pranks-on-linux.md)
 
 # Automation
-*   [Docker pre-provisioned authentication servers](Automation/docker-authentication-servers/README.md)
+*   [Docker pre-provisioned authentication servers](Automation/docker-authentication-servers)
 
 Loading...
 
