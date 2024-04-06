@@ -94,3 +94,14 @@ docker exec openldap-auth ldapsearch -x -H ldap://localhost -D "cn=admin,dc=qate
 
 ```
 
+# Keycloak Host and Docker Setup
+Keycloak comes in 2 flavors, a host setup geared for Arch linunx which will set up also a postgresql DB, and of course also a docker container.
+
+- The host version will be listening after the setup on port 8443 (https) and 8080 (http)
+- The docker version uses 8888 for the http instead of 8080, https is 8443
+- The container version is pinned on keycloak 24.02 (latest version at this moment)
+- To login use admin / qasupeR0ot
+- After the host or container (depnedning on your pick) is up and running you can provision using the keycloak-provisioning.py python3 script which uses the newest API (so don't use it on older versions of keycloak) and will :
+    - Creae 1500 users
+    - Randomly assign those users to 6 predefined groups
+    - last 100 users are not assigned to any group
