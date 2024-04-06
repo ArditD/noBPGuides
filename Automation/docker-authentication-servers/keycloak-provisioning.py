@@ -89,7 +89,7 @@ def main():
             )
 
         username = f"oauthuser{i}"
-        email = f"{username}@endian.com"
+        email = f"{username}@domain.com"
         password = f"oauthpwd{i}"
 
         if i <= group_assign_limit:
