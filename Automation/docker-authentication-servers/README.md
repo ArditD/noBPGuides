@@ -1,3 +1,9 @@
+## What is this?
+These are some useful scripts to set up different types of pre-provisioned authentication servers (radius,. openldap, samba [ad - dc] , keycloak) on a Linux based environment for test automation purposes.
+The script as quite tested, on an VM built with packer / proxmox which I'm not sharing atm, but it should work on all Linux environments.
+Make sure to read the pre-requisites.
+
+## How do I 
 
 ## System pre-requisites
 
