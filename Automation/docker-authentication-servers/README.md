@@ -1,9 +1,11 @@
 ## What is this?
-These are some useful scripts to set up different types of pre-provisioned authentication servers (radius,. openldap, samba [ad - dc] , keycloak) on a Linux based environment for test automation purposes.
-The script as quite tested, on an VM built with packer / proxmox which I'm not sharing atm, but it should work on all Linux environments.
-Make sure to read the pre-requisites.
+These is an extract of a test-automation project (geared towards the test environment condition) containing some bash/python scripts to set up different types of pre-provisioned (i.e including users and groups)  \
+authentication servers (radius,. openldap, samba [ad - dc] , keycloak) on a Linux based environment for test automation purposes. \
+The script are tested and robust using mainstream containers (openldap, radius) and methods (docker buildx instead of the deprecated docker build).
 
-## How do I 
+## How do I use it if I want to build the script?
+- RTM, system pre-requisites and the documentation related to che container you want to build
+- Run the script on a VM or on a host.
 
 ## System pre-requisites
 
